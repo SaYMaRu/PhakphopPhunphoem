@@ -1,44 +1,36 @@
-# ITCS37_Introduction-to-Software-Engineering
+
 # Revision Log
 
-## Use Case Diagrams
-## Actors
-### Additions in Modified Diagram:
-- **Criminal History Checker**: Added to handle criminal background checks.
-- **Income Verifier**: Added for income verification during the adoption process.
-- **Sponsor Approver**: Added to manage sponsorship approvals.
-- **Adoption Approver**: Added to review and approve adoption requests.
 
-## Use Cases
-### New Use Cases in Modified Diagram:
-1. **Approve the Adoption**:
-   - Details the specific process for adoption approval.
-2. **Approve the Sponsor**:
-   - Outlines the review process for sponsors.
-3. **Coach the Dog**:
-   - Introduces a training aspect for dogs.
-4. **Dog Health Checking**:
-   - Adds a health verification step for the dogs.
-5. **Submit Sponsorship & Logo**:
-   - Includes submission of sponsorship details.
-6. **Check Adopter Status**:
-   - Enables monitoring the status of an adopter.
-7. **Upload Photo**:
-   - Adds a feature for uploading dog or adopter photos.
-8. **Make Report**:
-   - Documents report creation related to the adoption process.
+### Revision List
 
-## Relationships
-### Modifications in Modified Diagram:
-1. **Include Links**:
-   - Added more "include" relationships for:
-     - **Approve the Sponsor** in **Submit Sponsorship & Logo**.
-     - **Approve the Adoption** in the adoption process.
-   - Adds dependency details for steps like **Date** and **Location** in delivery appointments.
-   
-2. **Extend Relationships**:
-   - **Update Dog Information** extends **Record the Dog**.
-   - **Receive Impact Updates** extends **Track Contributions**.
+| **Section**                  | **Change Description**                                                                                                                                      |
+|------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Functional Requirements**  | Added 10 new requirements, including features for high-resolution images of dogs, external criminal record verification, sponsor logos, and enhanced data logging. |
+| **Non-Functional Requirements** | Updated uptime requirements (99.5% changed to 99%), added support for disaster recovery plans, and emphasized WCAG compliance.                                |
+| **Identifying Actors**       | Added details for roles such as `Crime Suppression` and updated descriptions for `General User` and `Sponsor`.                                               |
+| **Use Case Narratives**      | Added new narratives for "Register an Account," "Login into an Account," and "Search for the Dog." Existing use cases were enhanced with specific exceptions and post-conditions. |
+| **Diagrams**                 | Functional Decomposition Diagram and Data Flow Diagram Levels 0 and 1 were modified with clearer representations and new links.                              |
 
-## Data Flow Diagram Level 0
+### Detailed Changes
 
+#### Functional Requirements
+- Added requirements to log and verify identity through external checks (e.g., criminal records).
+- Enhanced features for displaying sponsor logos and managing sponsorship information.
+- Introduced new administrative capabilities for tracking dog delivery and reporting.
+
+#### Non-Functional Requirements
+- Adjusted system uptime to 99%.
+- Introduced WCAG AA compliance for accessibility.
+- Added disaster recovery planning and strict data encryption mandates.
+
+#### Actors
+- `Crime Suppression` added as a new actor with specific responsibilities for background checks.
+- Enhanced descriptions for roles like `Sponsor` and `Organization Staff` to clarify their permissions.
+
+#### Use Case Narratives
+- Introduced new use cases: "Register an Account," "Login into an Account," and "Search for the Dog."
+- Existing narratives updated with additional exception handling and post-condition details.
+
+#### Diagrams
+- Modified **Functional Decomposition Diagram** and **Data Flow Diagrams** with new visual enhancements and updated links.
